@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Assignment
+        </title>    
+    </head>
+    <Body>
+        <h2>
+            Fill the form below
+        </h2>
+    <form onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+            
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        
+        <label for="phone"> Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <input type="submit" value="Submit"
+        </form>
+        
+        
+            <script>
+               function validateForm() {
+        let name=document.forms[0]["name"].value;
+        let email=document.forms[0]["email"].value;
+        let phone=document.forms[0]["phone"].value;
+        let gender=document.forms[0]["gender"].value;
+        let password=document.forms[0]["password"].value;
+        
+        if (name ===""|| email ===""|| phone ===""|| gender ===""|| password ===""||
+        alert('Please fill all the required field.");
+        return false;
+        }
+        
+        // Check email format
+        let emailRegex = /^\S+@\S+\.\S+S/;
+        If (!emailRefex.test(email)){
+            alert("Please enter a valid email address.");
+             return false;
+            }
+            //Success message
+            alert("Form submitted successfully!");
+             return true;
+        
+        
+        
+            </script>
+        
+        
+
+
+        
+        
+        </Body>
+        
+        </html>
+    
+    
+    
+    
+    
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
